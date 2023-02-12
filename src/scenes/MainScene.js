@@ -1,21 +1,16 @@
 import Phaser from 'phaser';
-import logoImg from '../assets/logo.png';
 
 export default class MainScene extends Phaser.Scene
 {
-    constructor ()
-    {
-        super();
+    constructor () {
+        super('Main');
     }
 
-    preload ()
-    {
-        this.load.image('logo', logoImg);
+    preload () {
     }
 
-    create ()
-    {
-        const logo = this.add.image(400, 150, 'logo');
+    create () {
+        const logo = this.add.image(400, 150, 'logo2');
 
         this.tweens.add({
             targets: logo,
